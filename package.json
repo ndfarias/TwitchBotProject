@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "bot project",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndfarias/TwitchBotProject.git"
+  },
+  "author": "Nicol Farias Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndfarias/TwitchBotProject/issues"
+  },
+  "homepage": "https://github.com/ndfarias/TwitchBotProject#readme",
+  "dependencies": {
+    "tmi.js": "^1.7.5"
+  }
+}
