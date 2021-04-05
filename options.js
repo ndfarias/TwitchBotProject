@@ -1,4 +1,4 @@
-//this file uses the token to allow the bot to send messages in the chat
+///this file uses the token to allow the bot to send messages in the chat
 
 const options = {
     options: {

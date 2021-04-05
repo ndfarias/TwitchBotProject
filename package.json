@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ndfarias/TwitchBotProject#readme",
   "dependencies": {
-    "tmi.js": "^1.7.5"
+    "tmi.js": "^1.7.5",
+    "xmlhttprequest": "^1.8.0"
   }
 }
