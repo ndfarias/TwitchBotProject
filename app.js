@@ -51,7 +51,7 @@ client.on('message', (channel, tags, message, self) => {
     //Code to delete messages - update with list of terms? 
 
     for (var i = 0; i < forbiddenWords.length; i++) {
-      if(message.toLowerCase().includes(forbiddenWords[i])){
+      if(message.toLowerCase() == forbiddenWords[i]){
         client.deletemessage(channel, tags.id)
         client.say(channel, `@${tags.username}, Please do not swear or use hateful language on this channel! Thank you. `);
         break;
