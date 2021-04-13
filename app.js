@@ -58,19 +58,15 @@ client.on('message', (channel, tags, message, self) => {
       }
     }
 
-    //can only start polls as twitch partner/affiliate - cannot test 
-
     //code to check stream length
 
     if(message.toLowerCase()== '!uptime') {
       request.onload = function() {
 
-        //data = this.response;
-
         if(request.status == 200)
         {        
           if (this.responseText.includes("offline")) {
-          client.say(channel, `@${tags.username}, ${this.responseText}`);
+          client.say(channel, `@${tags.username}, ${this.responseText} right now.`);
           }
           else {
             client.say(channel, `@${tags.username}, nicnova_ has been streaming for ${this.responseText}`);
@@ -88,8 +84,6 @@ client.on('message', (channel, tags, message, self) => {
     //code to check what game the streamer is playing 
     if(message.toLowerCase()== '!game') {
       request2.onload = function() {
-
-        //data = this.response;
 
         if(request2.status == 200)
         {        
